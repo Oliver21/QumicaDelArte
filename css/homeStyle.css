@@ -75,3 +75,15 @@ position:relative;
 #intro{width:800px; font-size:30px;}
 
 #pint{width:100px;}
+
+#video{
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: -2;
+ overflow: hidden;
+width:100%;
+}
+
+.BarraInferior{position:fixed;left:0;bottom:0; background-color:#04B4AE; width:100%; padding:8px; color:#ffffff; font-weight:bold;}
+#cuadro { position:fixed;  z-index: -1; left:230px; top:-200px; height:1000px; width:900px; opacity:.4;}

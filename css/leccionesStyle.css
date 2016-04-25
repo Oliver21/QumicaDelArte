@@ -81,3 +81,4 @@ position:relative;
 #descripcionConcepto{color:#ffffff; width:600px;}
 
 #dibujoConcepto{height:100px;}
+.BarraInferior{position:fixed;left:0;bottom:0; background-color:#04B4AE; width:100%; padding:8px; color:#ffffff; font-weight:bold;}

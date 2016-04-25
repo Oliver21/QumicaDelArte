@@ -16,5 +16,10 @@
 	<input type="submit" id="preguntas" class="button" value="Preguntas" onclick="login()"></input>
 	<input type="submit" id="simulacion" class="button" value="Simulación" onclick="login()"></input>
 </center>
+<video id="video" autoplay="autoplay" preload="auto" loop="loop">
+         <source src="../images/tinta.mov"> type="video/mp4"></source>
+    </video> 
+    <div class="BarraInferior">Desarrollado por: Oliver Martínez, Diego Mayorga, Hector Hernandez, Salvador García, Ricardo Alva, José Higuera</div>
+<img  id="cuadro" src="../images/cuadro.png"></img>
 </body>
 </html>
