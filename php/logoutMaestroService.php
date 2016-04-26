@@ -1,0 +1,10 @@
+<?php 
+session_start();
+if($_SESSION['user2']){
+	session_destroy();
+	header("location:../Html/loginMaestro.php");
+}
+else{
+	header("location:../Html/loginMaestro.php");
+}
+?>

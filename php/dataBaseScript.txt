@@ -12,9 +12,26 @@ CREATE TABLE Users (
 );
 
 
+CREATE TABLE admin (
+
+	firstName VARCHAR(30),
+
+	lastName VARCHAR(30),
+
+	username VARCHAR(50) NOT NULL PRIMARY KEY,
+
+    	pass VARCHAR(50) NOT NULL,
+    
+	mail VARCHAR(50) NOT NULL
+);
+
+
 
 INSERT INTO Users(firstName, lastName, username, pass, mail)
 VALUES  ('Oliver', 'Martinez', 'alumno', 'pass', 'alumno@hotmail.com')
+
+INSERT INTO admin(firstName, lastName, username, pass, mail)
+VALUES  ('Juan', 'Perez', 'maestro', 'admin', 'maestro@hotmail.com')
 
 CREATE TABLE examenes (
 	idExamen INT AUTO_INCREMENT PRIMARY KEY,
