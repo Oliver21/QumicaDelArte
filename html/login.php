@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if(@$_SESSION['user']){
+    header("Location:../Html/home.php");
+}
+?>
+
 <html>
 <link rel="stylesheet" type="text/css" href="../css/loginStyle.css">
 <script src="../js/jquery.js" type="text/javascript"> </script>
@@ -26,7 +33,6 @@
 </center>
 
 <script type="text/javascript">
-
 				function login(){
                 var jsonObject = {
                     "username" : $("#usuario").val(),
@@ -40,7 +46,7 @@
                     data: jsonObject,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                     success: function(jsonData) {
-                        alert("Welcome again " + jsonData.name + " " + "\n Your password is safe with us.");
+                        alert("Bienvenido " + jsonData.name + " "+ jsonData.last + ", esperamos disfrutes la página.");
                             window.location.replace("../Html/home.php");
 
                        
@@ -61,6 +67,8 @@
 
     </script>
 
-
+<img  id="estudiante" src="../images/estudiante.png"></img>
+<img  id="candado" src="../images/candado.png"></img>
 </body>
+<body style="overflow-y:hidden; overflow-x:hidden">
 </html>

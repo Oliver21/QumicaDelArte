@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if(@!$_SESSION['user']){
+  header("Location:../Html/login.php");
+}
+?>
+
 <html>
 <link rel="stylesheet" type="text/css" href="../css/leccionesStyle.css">
 <script src="../js/jquery.js" type="text/javascript"> </script>
@@ -8,7 +15,7 @@
 <body>
 	<center>
 	<p id="intro">En este experimento se aprenderá de forma sencilla y divertida acerca de conceptos básicos de química como polaridad, solubilidad y tensión superficial. El experimento consiste en agregar gotas de colorante de comida en un recipiente con leche, poner jabón y observar lo que ocurre. Antes hay que explicar unos cuantos conceptos.</p>
-	<p>Elige un concepto en la parte inferior para ver información sobre éste</p>
+	<p id="ins">Elige un concepto en la parte inferior para ver información sobre éste</p>
 	<select id="concepto" onchange="leccion()" class="button">
 <option selected value="0">
 <option value="1">Polaridad
@@ -18,9 +25,8 @@
 	<br><br>
 	<prueba id="prueba">
 	<p id="descripcionConcepto"></p>
-	<img  id="dibujoConcepto" src="../images/tension.png"></img> <br></br>
+	<img  id="dibujoConcepto"></img> <br></br>
 	</prueba>
-	<a href="../html/home.php"><input type="submit" id="menu" class="button" value="Menú" onclick="login()"></input></a>
 </center>
 
 <script>
@@ -38,10 +44,21 @@ function leccion(){
   	 					document.getElementById("dibujoConcepto").src="../images/jabon2.png";
                 } 
             }
+
+function logoutf(){
+        window.location.replace("../php/logoutService.php");
+    }
+
+function homef(){
+        window.location.replace("../html/home.php");
+    }
 </script>
 
 </body>
 
 <div class="BarraInferior">Desarrollado por: Oliver Martínez, Diego Mayorga, Hector Hernandez, Salvador García, Ricardo Alva, José Higuera</div>
-  
+   <div class="BarraSuperior"></div>
+<img  id="logout" src="../images/logout2.png" onclick="logoutf()"></img>
+<img  id="texto" src="../images/texto4.png" onclick="homef()"></img> <br>
+<img  id="pint" src="../images/atomo.png"></img>
 </html>

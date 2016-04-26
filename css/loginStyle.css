@@ -1,5 +1,5 @@
 body{
- background-image: url("../images/fondo1.jpg");
+ background-image: url("../images/fondo4.jpg");
  background-color:#F9F9F9;
  background-repeat: no-repeat;
  background-size: 100% auto;
@@ -95,10 +95,13 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
 
 
 
-#cuadro { position:relative;  z-index: -1; left:0px; width:350px; height:350px; top:-280px; opacity:.9;}
+#cuadro { position:relative;  z-index: -1; left:0px; width:410px; height:350px; top:-280px; opacity:.9;}
 
 #cuadro2{ position:relative;  z-index: -1; left:-75px; width:350px; height:450px; top:-430px; opacity:.9;}
 
 #cuadroInsertar { position:relative; z-index: -1; opacity: .8;}
 
 #registerButton{position:relative; top:-400px; left:170px;}
+
+#estudiante{width:40px; position:relative; top:-575px; left:490px;}
+#candado{width: 30px; position: relative; top:-505px; left:450px;}

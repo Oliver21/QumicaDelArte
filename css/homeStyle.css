@@ -1,5 +1,5 @@
 body{
- background-image: url("../images/fondo3.jpg");
+ background-image: url("../images/fondo5.jpeg");
  background-color:#F9F9F9;
  background-repeat: no-repeat;
  background-size: 100% auto;
@@ -72,9 +72,9 @@ position:relative;
 }
 
 
-#intro{width:800px; font-size:30px;}
+#intro{width:900px; font-size:30px; color:#ffffff; position:relative; top:-80px;}
 
-#pint{width:100px;}
+#pint{width:50px; position:relative; top:-73px; left:-650px;}
 
 #video{
  position: fixed;
@@ -85,5 +85,22 @@ position:relative;
 width:100%;
 }
 
+#texto{position:relative; top:-10px; height:60px; left:-430px;}
+#texto:hover{cursor:hand;}
+
 .BarraInferior{position:fixed;left:0;bottom:0; background-color:#04B4AE; width:100%; padding:8px; color:#ffffff; font-weight:bold;}
-#cuadro { position:fixed;  z-index: -1; left:230px; top:-200px; height:1000px; width:900px; opacity:.4;}
+.BarraSuperior{position:fixed;left:0;top:0; background-color:#BDBDBD; width:100%; height:50px; z-index: -1;}
+#cuadro { position:fixed;  z-index: -1; left:230px; top:-200px; height:1000px; width:900px; opacity:.0;}
+#logout{position:relative; width:40px; font-size: 10px; top:-650px; left:1290px;}
+#logout:hover{cursor:hand; width:41px; }
+#aprende{width:150px; position:relative; left:-200px; top:-40px;}
+#test{width:120px; position:relative; left:-10px; top:-70px;}
+#simulacion{width:150px; position:relative; left:150px; top:-40px;}
+
+#aprendeT{position:relative; left:-340px; top:-70px; font-size:25px; font-weight: bold; color:#ffffff;}
+#testT{position:relative; left:-10px; top:-125px; font-size:25px; font-weight: bold; color:#ffffff;}
+#simulacionT{position:relative; left:290px; top:-180px; font-size:25px; font-weight: bold; color:#ffffff;}
+
+#aprende:hover{cursor:hand; border: 2px solid #ffffff;}
+#test:hover{cursor:hand; border: 2px solid #ffffff;}
+#simulacion:hover{cursor:hand; border: 2px solid #ffffff;}
